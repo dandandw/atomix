@@ -110,7 +110,7 @@
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1>Buscador de DDD</h1>
-          </div>
+          </divj
         </div>
       </div><!-- /.container-fluid -->
     </section>
@@ -135,7 +135,7 @@
                          
                       </div>
                       <div class="col">
-                        <button type="submit" class="btn btn-success">Buscar</button>
+                        <button id="dddBtn" type="button" class="btn btn-success">Buscar</button>
                       </div>
                     </div>
                     
@@ -156,36 +156,11 @@
             <div class="card">
               <!-- /.card-header -->
               <div class="card-body">
-                <table id="example1" class="table table-bordered table-striped">
-                  <thead>
+                <table id="table" class="table table-bordered table-striped">
                   <tr>
                     <th>Cidade</th>
                     <th>Estado</th>
-                    <th>DDD</th>
                   </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>EMBU</td>
-                    <td>SP</td>
-                    <td>11</td>
-                  </tr>
-                  <tr>
-                    <td>VÁRZEA PAULISTA</td>
-                    <td>SP</td>
-                    <td>11</td>
-                  </tr>
-                  <tr>
-                    <td>VARGEM GRANDE PAULISTA</td>
-                    <td>SP</td>
-                    <td>11</td>
-                  </tr>
-                  <tr>
-                    <td>VARGEM</td>
-                    <td>SP</td>
-                    <td>11</td>
-                  </tr>
-                  </tbody>
                 </table>
               </div>
               <!-- /.card-body -->
@@ -207,15 +182,6 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-
-
-
-
-
-
-
-
-
 
   <!-- /.content-wrapper -->
   <footer class="main-footer">
@@ -292,5 +258,6 @@
     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
   });
 </script>
+<script src="js/ddd.js"></script>
 </body>
 </html>

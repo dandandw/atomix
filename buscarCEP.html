@@ -131,14 +131,12 @@
                   <div class="form-group">
                     <div class="row">
                       <div class="col">
-                        <input type="number" name="cep" class="form-control" id="cep" placeholder="CEP">
-                         
+                          <input type="text" pattern="[0-9]{5}\-[0-9]{3}" maxlength="8" name="cep" class="form-control" id="cep" placeholder="CEP" required>
                       </div>
                       <div class="col">
-                        <button type="submit" class="btn btn-success">Buscar</button>
+                        <button id="cepBtn" type="button" class="btn btn-success">Buscar</button>
                       </div>
                     </div>
-                    
                   </div>
                 </div>
                 <!-- /.card-body -->
@@ -151,8 +149,7 @@
         <!-- /.row -->
       </div><!-- /.container-fluid -->
       </section>
-      <!-- Main content -->
-    <section class="content">
+          <section class="content">
         <div class="container-fluid">
           <div class="row">
             <!-- left column -->
@@ -168,28 +165,27 @@
                       <div class="row">
                         <div class="col-md-9">
                             <label for="logradouro">Logradouro</label>
-                            <input type="text" name="logradouro" class="form-control" id="logradouro">
+                            <input type="text" name="logradouro" class="form-control disabled" id="logradouro" disabled>
                         </div>
                         <div class="col-md-3">
-                            <label for="numero">Número</label>
-                            <input type="numero" name="numero" class="form-control" id="numero">
+                            <label for="numero">CEP</label>
+                            <input type="numero" name="numero" class="form-control" id="numero" disabled>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-md-5">
                             <label for="bairro">Bairro</label>
-                            <input type="text" name="bairro" class="form-control" id="bairro">
+                            <input type="text" name="bairro" class="form-control" id="bairro" disabled>
                         </div>
                         <div class="col-md-5">
                             <label for="cidade">Cidade</label>
-                            <input type="cidade" name="cidade" class="form-control" id="cidade">
+                            <input type="cidade" name="cidade" class="form-control" id="cidade" disabled>
                         </div>
                         <div class="col-md-2">
                             <label for="estado">Estado</label>
-                            <input type="estado" name="estado" class="form-control" id="estado">
+                            <input type="estado" name="estado" class="form-control" id="estado" disabled>
                         </div>
                       </div>
-                      
                     </div>
                   </div>
                   <!-- /.card-body -->
@@ -202,24 +198,6 @@
           <!-- /.row -->
         </div><!-- /.container-fluid -->
         </section>
-        <section class="content">
-            <div class="container-fluid">
-              <div class="row">
-                <!-- left column -->
-                <div class="col-md-12">
-                  <!-- jquery validation -->
-                  <div class="card card-primary">
-                  
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14554.680607033793!2d-61.525891775859264!3d-11.197719472582593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c9c4ca47113369%3A0xe2814b8a5ef7ea1e!2sMin.%20Andreazza%2C%20RO%2C%2076919-000!5e1!3m2!1spt-BR!2sbr!4v1653456890544!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    
-                  </div>
-                  <!-- /.card -->
-                  </div>
-                <!--/.col (left) -->
-              </div>
-              <!-- /.row -->
-            </div><!-- /.container-fluid -->
-            </section>
     </div>
     <!-- /.content -->
   </div>
@@ -283,5 +261,6 @@
 <script src="vendor/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="vendor/dist/js/pages/dashboard.js"></script>
+<script src="js/cep.js"></script>
 </body>
 </html>
